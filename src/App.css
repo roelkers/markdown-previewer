@@ -1,0 +1,50 @@
+
+
+#appContainer {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.input {
+  padding:10px;
+  font-family: 'Inconsolata', monospace;
+  min-width : 320px;
+  height: 160px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.markdown{
+  padding:10px;
+  font-family: 'Noto Serif', serif;
+  margin-top: 20px;
+  min-width: 320px;
+  min-height: 160px;
+  background-color: #FFDCD4;
+  border: 2px solid black;
+}
+
+@media screen and (min-width : 700px) {
+  .container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .markdown{
+    margin-top: 0px;
+    margin-left: 20px;
+    width: 25vw;
+    min-height: 320px;
+  }
+  .input{
+    width: 25vw;
+    height: 320px;
+  }
+}
